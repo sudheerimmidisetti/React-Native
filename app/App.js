@@ -1,33 +1,17 @@
-// import { StatusBar } from 'expo-status-bar';
-// import { StyleSheet, Text, View } from 'react-native';
-
-// export default function App() {
-//   return (
-//     <View style={styles.container}>
-//       <Text>Hello Sudheer, Your doing great!</Text>
-//       <Text>Bye Sudheer!</Text>
-//       <StatusBar style="auto" />
-//     </View>
-//   );
-// }
-
-// const styles = StyleSheet.create({
-//   container: {
-//     flex: 1,
-//     backgroundColor: '#fff',
-//     alignItems: 'center',
-//     justifyContent: 'center',
-//   },
-// });
-
-import React from "react";
-import { View, Text, Button } from "react-native";
+import react from "react";
+import { View, Text, Button, TouchableOpacity, Image, StyleSheet } from "react-native";
+import MyImage from "./assets/favicon.png"
+import { StatusBar } from "react-native";
+import Component from "./Component";
+import { SafeAreaProvider } from "react-native-safe-area-context";
 
 const App = () => {
   return (
-    <View>
-      <Text>Aditya University</Text>
-    </View>
+    <>
+      <SafeAreaProvider>
+        <Component />
+      </SafeAreaProvider>
+    </>
   )
 }
 
