@@ -4,12 +4,14 @@ import MyImage from "./assets/favicon.png"
 import { StatusBar } from "react-native";
 import Component from "./Component";
 import { SafeAreaProvider } from "react-native-safe-area-context";
+import PasswordField from "./Password";
 
 const App = () => {
   return (
     <>
       <SafeAreaProvider>
-        <Component />
+        {/* <Component /> */}
+        <PasswordField />
       </SafeAreaProvider>
     </>
   )
