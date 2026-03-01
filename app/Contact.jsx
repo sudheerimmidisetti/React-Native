@@ -1,10 +1,12 @@
 import react from "react";
 import { Text, Button } from "react-native-paper";
 import { useNavigation, useRoute } from "@react-navigation/native";
+
 const Contact = () => {
     const Navigation = useNavigation()
     const routesData = useRoute();
     console.log(routesData.params);
+    
     return (
         <>
             <Text>Profile Screen</Text>
@@ -14,4 +16,5 @@ const Contact = () => {
         </>
     )
 }
+
 export default Contact;
