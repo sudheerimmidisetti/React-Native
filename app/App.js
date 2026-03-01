@@ -13,7 +13,7 @@ import Component from "./Component";
 import { SafeAreaProvider } from "react-native-safe-area-context";
 import PasswordField from "./Password-Tasks";
 import ChipInput from "./Chip-Task";
-import Navigations from "./Navigations";
+import StackNavigation from "./Stack-Navigation";
 
 const App = () => {
   return (
@@ -22,7 +22,7 @@ const App = () => {
         {/* <Component /> */}
         {/* <PasswordField /> */}
         {/* <ChipInput /> */}
-        <Navigations />
+        <StackNavigation />
       </SafeAreaProvider>
     </>
   );
