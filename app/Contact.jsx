@@ -7,7 +7,7 @@ const Contact = () => {
     console.log(routesData.params);
     return (
         <>
-            <Text>Contact Screen</Text>
+            <Text>Profile Screen</Text>
             <Button
                 onPress={() => Navigation.navigate('Profile')}
             >Move to Profile Screen</Button>
