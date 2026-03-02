@@ -15,6 +15,7 @@ import PasswordField from "./Password-Tasks";
 import ChipInput from "./Chip-Task";
 import StackNavigation from "./Stack-Navigation";
 import StackNavigation2 from "./Stack-Navigation-2";
+import ImagePicker from "./Image-Picker";
 
 const App = () => {
   return (
@@ -24,7 +25,8 @@ const App = () => {
         {/* <PasswordField /> */}
         {/* <ChipInput /> */}
         {/* <StackNavigation /> */}
-        <StackNavigation2 />
+        {/* <StackNavigation2 /> */}
+        <ImagePicker />
       </SafeAreaProvider>
     </>
   );
