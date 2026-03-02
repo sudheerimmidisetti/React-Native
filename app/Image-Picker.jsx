@@ -24,7 +24,7 @@ const ImagePicker = () => {
 
     return (
         <>
-            <Button mode="contained" onPress={LaunchGallary}>
+            <Button mode="contained" onPress={LaunchGallary} style={{marginTop: 30}}>
                 Tap Me!!!
             </Button>
             {
