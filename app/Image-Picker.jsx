@@ -47,4 +47,4 @@ const ImagePicker = () => {
     )
 }
 
-export default Home;
+export default ImagePicker;
