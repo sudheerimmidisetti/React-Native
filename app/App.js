@@ -16,6 +16,7 @@ import ChipInput from "./Chip-Task";
 import StackNavigation from "./Stack-Navigation";
 import StackNavigation2 from "./Stack-Navigation-2";
 import ImagePicker from "./Image-Picker";
+import SharingImage from "./Sharing-Image";
 
 const App = () => {
   return (
@@ -26,7 +27,8 @@ const App = () => {
         {/* <ChipInput /> */}
         {/* <StackNavigation /> */}
         {/* <StackNavigation2 /> */}
-        <ImagePicker />
+        {/* <ImagePicker /> */}
+        <SharingImage />
       </SafeAreaProvider>
     </>
   );
