@@ -18,6 +18,8 @@
     "expo-image-picker": "~17.0.10",
     "expo-sharing": "~14.0.8",
     "expo-status-bar": "~3.0.9",
+    "modules": "^0.4.0",
+    "node": "^25.8.0",
     "react": "19.1.0",
     "react-native": "^0.81.5",
     "react-native-paper": "^5.15.0",
