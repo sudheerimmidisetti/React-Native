@@ -6,9 +6,9 @@ import { CameraView, useCameraPermissions } from "expo-camera";
 import * as Sharing from 'expo-sharing'
 
 const CameraImageCapture = () => {
-    // <View style={{ paddingTop: StatusBar.currentHeight }}></View>
-    const [Frames, setFrame] = useState(null)
-    const [ImagePath, setImagePath] = useState(null)
+    const [Frames, setFrame] = useState(null);
+    const [ImagePath, setImagePath] = useState(null);
+    const [cameraType, setCameraType] = useState("front");
     const [permission, RequestCamAccess] = useCameraPermissions();
 
     if (!permission) {
@@ -45,13 +45,20 @@ const CameraImageCapture = () => {
         }
     }
 
+    const FlipCamera = () => {
+        setCameraType(prev => prev === "front" ? "back" : "front")
+    }
+
     return (
         <View style={{ marginTop: 100 }}>
             <CameraView
                 style={{ width: "100%", height: 300 }}
-                facing="front"
+                facing={cameraType} 
                 ref={(ref) => setFrame(ref)}
             />
+            
+            <Button onPress={FlipCamera}>Flip Camera</Button>
+
             <Button onPress={Capture}>Take Picture</Button>
             {
                 ImagePath
