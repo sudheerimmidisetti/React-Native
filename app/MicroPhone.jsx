@@ -8,8 +8,9 @@ export default function MicroPhone() {
 
     const Start = async () => {
         try {
-            const status = await Audio.getPermissionsAsync();
+            const status = await Audio.requestPermissionsAsync();
             console.log(status)
+            
             if (!status.granted) {
                 alert("Microphone is not allowed")
                 return;
@@ -45,7 +46,7 @@ export default function MicroPhone() {
             console.log(err)
         }
     }
-    
+
     return (
         <View style={{ marginTop: 100 }}>
             <Button onPress={Start}>Start Recording</Button>
