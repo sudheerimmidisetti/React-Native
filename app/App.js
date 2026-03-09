@@ -17,6 +17,7 @@ import StackNavigation from "./Stack-Navigation";
 import StackNavigation2 from "./Stack-Navigation-2";
 import ImagePicker from "./Image-Picker";
 import SharingImage from "./Sharing-Image";
+import CameraImageCapture from "./Camera-Image-Capture";
 
 const App = () => {
   return (
@@ -28,7 +29,8 @@ const App = () => {
         {/* <StackNavigation /> */}
         {/* <StackNavigation2 /> */}
         {/* <ImagePicker /> */}
-        <SharingImage />
+        {/* <SharingImage /> */}
+        <CameraImageCapture style={{ marginTop: 100 }}/>
       </SafeAreaProvider>
     </>
   );
