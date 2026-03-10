@@ -19,6 +19,7 @@ import ImagePicker from "./Image-Picker";
 import SharingImage from "./Sharing-Image";
 import CameraImageCapture from "./Camera-Image-Capture";
 import MicroPhone from "./MicroPhone";
+import FingerPrintAuthentication from "./FingerPrint-Authentication";
 
 const App = () => {
   return (
@@ -32,7 +33,8 @@ const App = () => {
         {/* <ImagePicker /> */}
         {/* <SharingImage /> */}
         {/* <CameraImageCapture/> */}
-        <MicroPhone />
+        {/* <MicroPhone /> */}
+        <FingerPrintAuthentication />
       </SafeAreaProvider>
     </>
   );
